@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name kt315)(type Legacy)(uri "${KIPRJMOD}/KiCAD libraries/kt315.lib")(options "")(descr ""))
+  (lib (name new_relays)(type Legacy)(uri "${KIPRJMOD}/KiCAD libraries/new relays.lib")(options "")(descr ""))
+  (lib (name ssv)(type Legacy)(uri ${KIPRJMOD}/ssv.lib)(options "")(descr ""))
+)

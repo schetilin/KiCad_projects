@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name capacitors)(type Legacy)(uri "${KIPRJMOD}/KiCAD libraries/capacitors.mod")(options "")(descr ""))
+  (lib (name connectors)(type Legacy)(uri "${KIPRJMOD}/KiCAD libraries/connectors.mod")(options "")(descr ""))
+  (lib (name inductors)(type Legacy)(uri "${KIPRJMOD}/KiCAD libraries/inductors.mod")(options "")(descr ""))
+  (lib (name relays_new)(type Legacy)(uri "${KIPRJMOD}/KiCAD libraries/relays_new.mod")(options "")(descr ""))
+  (lib (name rezistors)(type Legacy)(uri "${KIPRJMOD}/KiCAD libraries/rezistors.mod")(options "")(descr ""))
+  (lib (name transistors)(type Legacy)(uri "${KIPRJMOD}/KiCAD libraries/transistors.mod")(options "")(descr ""))
+)

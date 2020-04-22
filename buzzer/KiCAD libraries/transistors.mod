@@ -1,0 +1,88 @@
+PCBNEW-LibModule-V1  Пт 01 май 2015 18:43:54
+# encoding utf-8
+Units mm
+$INDEX
+kt315
+МП-xx
+$EndINDEX
+$MODULE kt315
+Po 0 0 0 15 54C0013C 00000000 ~~
+Li kt315
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -2.159 1 1 0 0.15 N V 21 N "T"
+T1 0 2.413 1 1 0 0.15 N V 21 N "VAL**"
+DS -3.302 0.762 3.302 0.762 0.15 21
+DS -3.302 -1.143 -3.302 1.143 0.15 21
+DS -3.302 1.143 3.302 1.143 0.15 21
+DS 3.302 1.143 3.302 -1.016 0.15 21
+DS 3.302 -1.016 3.302 -1.143 0.15 21
+DS 3.302 -1.143 -3.302 -1.143 0.15 21
+$PAD
+Sh "E" C 2 2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.5 0
+$EndPAD
+$PAD
+Sh "C" C 2 2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "B" R 2 2 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.5 0
+$EndPAD
+$SHAPE3D
+Na "packages3d/transistors/kt315.wrl"
+Sc 1 1 1
+Of 0 0 0.1
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE kt315
+$MODULE МП-xx
+Po 0 0 0 15 55439F22 00000000 ~~
+Li МП-xx
+Sc 0
+AR 
+Op 0 0 0
+T0 0 1.75 1 1 0 0.15 N V 21 N "МП-xx"
+T1 0 -4.5 1 1 0 0.15 N V 21 N "VAL**"
+DC 0 0 5.65 0 0.15 21
+DC 0 0 4 0 0.15 21
+$PAD
+Sh "1" C 1.4 1.4 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2.1 0
+$EndPAD
+$PAD
+Sh "2" C 1.4 1.4 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 -2.1
+$EndPAD
+$PAD
+Sh "3" C 1.4 1.4 0 0 0
+Dr 0.6 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.1 0
+$EndPAD
+$SHAPE3D
+Na "packages3d/transistors/МПxx.wrl"
+Sc 1 1 1
+Of 0 0 0.25
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE МП-xx
+$EndLIBRARY

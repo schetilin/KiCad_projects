@@ -1,0 +1,203 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:R R1
+U 1 1 5E9CD816
+P 3225 4600
+F 0 "R1" H 3293 4646 50  0000 L CNN
+F 1 "680к" H 3293 4555 50  0000 L CNN
+F 2 "rezistors:MLT_0.125_10" H 3225 4600 50  0001 C CNN
+F 3 "~" H 3225 4600 50  0001 C CNN
+	1    3225 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L kt315:KT315 Q1
+U 1 1 5E9CDF9B
+P 3775 3775
+F 0 "Q1" H 3966 3729 50  0000 L CNN
+F 1 "KT315" H 3966 3820 50  0000 L CNN
+F 2 "transistors:kt315" H 3775 3775 50  0001 C CNN
+F 3 "" H 3775 3775 60  0000 C CNN
+	1    3775 3775
+	1    0    0    1   
+$EndComp
+$Comp
+L kt315:KT361 Q2
+U 1 1 5E9CF318
+P 4800 4150
+F 0 "Q2" H 4991 4196 50  0000 L CNN
+F 1 "KT361" H 4991 4105 50  0000 L CNN
+F 2 "transistors:kt315" H 4800 4150 50  0001 C CNN
+F 3 "" H 4800 4150 60  0000 C CNN
+	1    4800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS1
+U 1 1 5E9CF96D
+P 5100 3500
+F 0 "LS1" H 5270 3496 50  0000 L CNN
+F 1 "Speaker" H 5270 3405 50  0000 L CNN
+F 2 "Connector:Banana_Jack_2Pin" H 5100 3300 50  0001 C CNN
+F 3 "~" H 5090 3450 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E9D1772
+P 5925 4400
+F 0 "C3" H 6040 4446 50  0000 L CNN
+F 1 "0,033мк" H 6040 4355 50  0000 L CNN
+F 2 "capacitors:ceramic_8" H 5963 4250 50  0001 C CNN
+F 3 "~" H 5925 4400 50  0001 C CNN
+	1    5925 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E9D1B38
+P 4375 4550
+F 0 "C2" V 4123 4550 50  0000 C CNN
+F 1 "0,25мк" V 4214 4550 50  0000 C CNN
+F 2 "capacitors:ceramic_8" H 4413 4400 50  0001 C CNN
+F 3 "~" H 4375 4550 50  0001 C CNN
+	1    4375 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5E9D25D1
+P 3800 4550
+F 0 "RV1" V 3685 4550 50  0000 C CNN
+F 1 "2,2м" V 3594 4550 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA14-H4_Horizontal" H 3800 4550 50  0001 C CNN
+F 3 "~" H 3800 4550 50  0001 C CNN
+	1    3800 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E9D3667
+P 4200 3325
+F 0 "SW1" H 4200 3610 50  0000 C CNN
+F 1 "SW_Push" H 4200 3519 50  0000 C CNN
+F 2 "Connector:Banana_Jack_2Pin" H 4200 3525 50  0001 C CNN
+F 3 "~" H 4200 3525 50  0001 C CNN
+	1    4200 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3325 4900 3500
+Wire Wire Line
+	4900 3600 4900 3850
+Wire Wire Line
+	4400 3325 4900 3325
+Wire Wire Line
+	4000 3325 3875 3325
+Wire Wire Line
+	3875 3325 3875 3575
+Wire Wire Line
+	3225 4350 3225 3775
+Wire Wire Line
+	3225 3775 3550 3775
+Wire Wire Line
+	3650 4550 3600 4550
+Wire Wire Line
+	3550 4550 3550 3775
+Connection ~ 3550 3775
+Wire Wire Line
+	3550 3775 3575 3775
+Wire Wire Line
+	3800 4400 3600 4400
+Wire Wire Line
+	3600 4400 3600 4550
+Connection ~ 3600 4550
+Wire Wire Line
+	3600 4550 3550 4550
+Wire Wire Line
+	3950 4550 4225 4550
+Wire Wire Line
+	3875 4150 4600 4150
+Wire Wire Line
+	3875 3975 3875 4150
+Wire Wire Line
+	4900 4850 4900 4350
+Connection ~ 3225 4850
+Wire Wire Line
+	4900 4850 5925 4850
+Connection ~ 4900 4850
+Wire Wire Line
+	5925 4550 5925 4850
+Wire Wire Line
+	5925 4250 5925 3850
+Wire Wire Line
+	5925 3850 5375 3850
+Connection ~ 4900 3850
+Wire Wire Line
+	4900 3850 4900 3950
+Wire Wire Line
+	4525 4550 5375 4550
+Wire Wire Line
+	5375 4550 5375 3850
+Connection ~ 5375 3850
+Wire Wire Line
+	5375 3850 4900 3850
+Wire Wire Line
+	6600 3325 6600 4000
+Wire Wire Line
+	4900 3325 6600 3325
+Connection ~ 4900 3325
+$Comp
+L Device:Battery BT1
+U 1 1 5E9E61C1
+P 6600 4200
+F 0 "BT1" H 6492 4154 50  0000 R CNN
+F 1 "9v" H 6492 4245 50  0000 R CNN
+F 2 "Connector:Banana_Jack_2Pin" V 6600 4260 50  0001 C CNN
+F 3 "~" V 6600 4260 50  0001 C CNN
+	1    6600 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5925 4850 6600 4850
+Wire Wire Line
+	6600 4850 6600 4400
+Connection ~ 5925 4850
+Connection ~ 3875 3325
+Wire Wire Line
+	3225 4850 4900 4850
+$Comp
+L Device:CP C1
+U 1 1 5E9CD21D
+P 2625 4075
+F 0 "C1" H 2507 4029 50  0000 R CNN
+F 1 "50мк" H 2507 4120 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2663 3925 50  0001 C CNN
+F 3 "~" H 2625 4075 50  0001 C CNN
+	1    2625 4075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2625 4225 2625 4850
+Wire Wire Line
+	2625 3325 2625 3925
+Wire Wire Line
+	3875 3325 2625 3325
+Wire Wire Line
+	2625 4850 3225 4850
+$EndSCHEMATC

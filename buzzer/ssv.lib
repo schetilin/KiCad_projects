@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# AMC7135
+#
+DEF AMC7135 Q 0 20 Y Y 1 F N
+F0 "Q" -200 350 50 H V C CNN
+F1 "AMC7135" 250 350 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-89-3" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 250 250 -250 0 1 0 N
+X OUT 1 350 0 100 L 50 50 1 1 U
+X GND 2 0 -350 100 U 50 50 1 1 U
+X VDD 3 0 350 100 D 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# connector_hole_pad
+#
+DEF connector_hole_pad J 0 0 N N 1 F N
+F0 "J" 0 0 50 H V C CNN
+F1 "connector_hole_pad" 0 0 50 H I C CNN
+F2 "connectors:b_single" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 50 0 1 39 N
+X ~ ~ -150 0 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
