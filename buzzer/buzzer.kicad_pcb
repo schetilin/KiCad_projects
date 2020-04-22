@@ -12,7 +12,7 @@
   (page A4)
   (layers
     (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
@@ -264,11 +264,6 @@
       (net 2 "Net-(C1-Pad2)"))
     (pad B thru_hole rect (at 2.5 0 270) (size 2 2) (drill 1) (layers *.Cu *.Mask F.SilkS)
       (net 1 "Net-(Q1-PadC)"))
-    (model packages3d/transistors/kt315.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     (model "${KIPRJMOD}/KiCAD libraries/packages3d/transistors/kt315.wrl"
       (offset (xyz 0 0 1))
       (scale (xyz 1 1 1))
@@ -297,11 +292,6 @@
       (net 1 "Net-(Q1-PadC)"))
     (pad B thru_hole rect (at 2.5 0 270) (size 2 2) (drill 1) (layers *.Cu *.Mask F.SilkS)
       (net 3 "Net-(C1-Pad1)"))
-    (model packages3d/transistors/kt315.wrl
-      (offset (xyz 0 0 0.1))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     (model "${KIPRJMOD}/KiCAD libraries/packages3d/transistors/kt315.wrl"
       (offset (xyz 0 0 1))
       (scale (xyz 1 1 1))
@@ -356,7 +346,7 @@
     (effects (font (size 2 2) (thickness 0.3)))
   )
   (dimension 13.97 (width 0.15) (layer Cmts.User)
-    (gr_text "13,970 мм" (at 123.16 89.027 90) (layer Cmts.User) (tstamp 5E9CE138)
+    (gr_text "13,970 мм" (at 123.16 89.027 90) (layer Cmts.User)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 127 96.012) (xy 123.873579 96.012)))
@@ -368,7 +358,7 @@
     (arrow2b (pts (xy 124.46 82.042) (xy 125.046421 83.168504)))
   )
   (dimension 24.892 (width 0.15) (layer Cmts.User)
-    (gr_text "24,892 мм" (at 139.446 78.202) (layer Cmts.User) (tstamp 5E9C7C9A)
+    (gr_text "24,892 мм" (at 139.446 78.202) (layer Cmts.User)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 151.892 82.042) (xy 151.892 78.915579)))
